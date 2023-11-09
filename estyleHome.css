@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    /* background: linear-gradient(to right, #d89b69, #ebdcdc); */
+    background-color: #ffffff;
+}
+
+/* Seletor para o input do tipo search */
+input[type="search"]::placeholder {
+    color: #ffffff; /* Cor desejada para o texto do placeholder */
+}
+
+input[type=search]:focus{
+  box-shadow: inset 0 -1px 0 #ffffff;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    overflow: scroll;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ddd; /* Adicione esta linha para a borda fina */
+}
+
+.table::-webkit-scrollbar {
+    display: none;
+}
+
+thead tr {
+    font-weight: bold;
+    height: 46px;
+    color: white;
+    border-top: 1px solid #f08b39;
+    background-color: #f08b39;
+    box-shadow: 0px 5px 5px #ccc;
+    font-size: 15px;
+}
+
+tbody td {
+    padding: 3.8%; /* Ajuste o valor conforme necessário */
+}
+
+tbody tr {
+    border-bottom: .2px solid #ddd;
+    background-color: #fff;
+    height: 40px;
+    font-size: 14px;
+}
+
+thead tr {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+tbody tr:hover {
+    background-color: #ee9044;
+}
+
+#responsivo{
+    display: none;
+}
+
+@media (max-width: 630px){
+    #desktop{
+        display: none;
+    }
+
+    #responsivo{
+        display: block;
+    }
+
+    input[type=search]:focus{
+        box-shadow: inset 0 -1px 0 #ffffff;
+      }
+      
+      table {
+          border-collapse: collapse;
+          width: 100%;
+          overflow: scroll;
+          text-align: center;
+          cursor: pointer;
+          border: 1px solid #ddd; /* Adicione esta linha para a borda fina */
+      }
+      
+      .table::-webkit-scrollbar {
+          display: none;
+      }
+      
+      thead tr {
+          font-weight: bold;
+          height: 46px;
+          color: white;
+          border-top: 1px solid #f08b39;
+          background-color: #f08b39;
+          box-shadow: 0px 5px 5px #ccc;
+          font-size: 15px;
+      }
+      
+      tbody td {
+          padding: 3.8%; /* Ajuste o valor conforme necessário */
+      }
+      
+      tbody tr {
+          border-bottom: .2px solid #ddd;
+          background-color: #fff;
+          height: 40px;
+          font-size: 14px;
+      }
+      
+      thead tr {
+          position: sticky;
+          position: -webkit-sticky;
+          top: 0;
+      }
+      
+      tbody tr:hover {
+          background-color: #ee9044;
+      }
+}
+
+
+
